@@ -12,11 +12,16 @@
 //             Prompt user to enter the number of child tickets sold
 //             Wait for user to enter the number of child tickets sold
 //
-//      Programming:
+//      Programming: grossBoxOffice = (adultTicketsSold * ADULT_TICKET_PRICE) +
+//                   (childTicketsSold * CHILD_TICKET_PRICE);
+//                   amountPaidToDistributer = (grossBoxOffice * DISTRIBUTER_CUT);
+//                   netBoxOffice = (grossBoxOffice * MOVIE_THEATER_CUT);
 //
 //
-//      Output: Display the name of the movie input by the user, the number of adult & child tickets sold,
-//              gross box office revenue, amount paid to distributer, and net box office revenue
+//
+//      Output: Display the name of the movie input by the user, the number of
+//              adult & child tickets sold, gross box office revenue,
+//              amount paid to distributer, and net box office revenue
 //
 // Stop
 
@@ -34,7 +39,6 @@ int main()
     int adultTicketsSold;
     int childTicketsSold;
     double grossBoxOffice;
-    double grossOfficeReveue;
     double amountPaidToDistributer;
     double netBoxOffice;
     string movieName;
@@ -45,18 +49,20 @@ int main()
     cin >> adultTicketsSold;
     cout << "Child ticket sales: ";
     cin >> childTicketsSold;
-    cout << "----------------------------------------------------\n";
+    cout << endl;
+    cout << "-------------------------------------------------------\n";
+
     grossBoxOffice = (adultTicketsSold * ADULT_TICKET_PRICE) + (childTicketsSold * CHILD_TICKET_PRICE);
     amountPaidToDistributer = (grossBoxOffice * DISTRIBUTER_CUT);
     netBoxOffice = (grossBoxOffice * MOVIE_THEATER_CUT);
 
     cout << fixed << setprecision(2);
-    cout << "Movie name:" << right << setw(26) << "\"" << movieName << "\"" << endl;
-    cout << "Adult Tickets Sold:" << right << setw(20) << adultTicketsSold << endl;
-    cout << "Child Tickets Sold:" << right << setw(20) << childTicketsSold << endl;
-    cout << "Gross Box Office Revenue:" << right << setw(13) << "$ " << grossBoxOffice << endl;
-    cout << "Amount Paid to Distributer:" << right << setw(11) << "-$ " << setw(7) << amountPaidToDistributer << endl;
-    cout << "Net Box Office Revenue:" << right << setw(15) << "$ " << netBoxOffice << endl;
+    cout << "Movie name:" << right << setw(21) << "\"" << movieName << "\"" << endl;
+    cout << "Adult Tickets Sold:" << right << setw(12) << " " << left << setw(16) << adultTicketsSold << endl;
+    cout << "Child Tickets Sold:" << right << setw(12) << " " << left << setw(6) << childTicketsSold << endl;
+    cout << "Gross Box Office Revenue:" << right << setw(8) << "$ " <<left << setw(7) << grossBoxOffice << endl;
+    cout << "Amount Paid to Distributer:" << right << setw(6) << "-$ " << setw(7) << amountPaidToDistributer << endl;
+    cout << "Net Box Office Revenue:" << right << setw(10) << "$ " << left << setw(7) << netBoxOffice << endl;
 
     return 0;
 }
