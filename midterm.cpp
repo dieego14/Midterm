@@ -1,7 +1,7 @@
 // Programmer: Diego
 //
 // Purpose: Create a program that calculates the gross and
-//          net box office revenue for a night
+//          net box office revenue for a night 
 //
 // Start
 //
@@ -61,7 +61,7 @@ int main()
     cout << "Adult Tickets Sold:" << right << setw(12) << " " << left << setw(16) << adultTicketsSold << endl;
     cout << "Child Tickets Sold:" << right << setw(12) << " " << left << setw(6) << childTicketsSold << endl;
     cout << "Gross Box Office Revenue:" << right << setw(8) << "$ " <<left << setw(7) << grossBoxOffice << endl;
-    cout << "Amount Paid to Distributer:" << right << setw(6) << "-$ " << setw(7) << amountPaidToDistributer << endl;
+    cout << "Amount Paid to Distributer:" << right << setw(6) << "-$ " <<right << setw(7) << amountPaidToDistributer << endl;
     cout << "Net Box Office Revenue:" << right << setw(10) << "$ " << left << setw(7) << netBoxOffice << endl;
 
     return 0;
