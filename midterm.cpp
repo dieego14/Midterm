@@ -19,3 +19,39 @@
 //              gross box office revenue, amount paid to distributer, and net box office revenue 
 //
 // Stop
+
+#include <iostream>
+#include <string>
+#include <iomanip>
+using namespace std;
+
+int main(){
+    const double ADULT_TICKET_PRICE = 10.00;
+    int adultTicketsSold;
+    const double CHILD_TICKET_PRICE = 6.00;
+    int childTicketsSold;
+    string movieName;
+
+
+
+
+    cout << "Enter movie name: ";
+    getline(cin,movieName);
+    cout << "Adult ticket sales: ";
+    cin >> adultTicketsSold;
+    cout <<"Child ticket sales: ";
+    cin >> childTicketsSold;
+    cout <<endl<<endl;
+    
+    cout << "------------------------------------------";
+
+    cout<<"Movie name: ";
+    cout<<"Adult Tickets Sold";
+
+
+
+
+
+
+
+}
